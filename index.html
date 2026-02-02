@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavishya Parjapati | The Vault | Encrypted Resources</title>
+    <meta name="description" content="Secure file repository of Bhavishya Parjapati. Access trading algorithms, system configs, and public keys.">
+    
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Courier New', monospace; padding: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        h1 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
+        .directory { margin-top: 30px; border: 1px solid #30363d; border-radius: 6px; overflow: hidden; }
+        
+        .file-row { 
+            display: flex; justify-content: space-between; padding: 15px; 
+            border-bottom: 1px solid #21262d; background: #161b22; transition: 0.2s;
+            text-decoration: none; color: inherit;
+        }
+        .file-row:hover { background: #21262d; }
+        .file-row:last-child { border-bottom: none; }
+        
+        .icon { margin-right: 10px; color: #79c0ff; }
+        .lock { color: #ff7b72; font-size: 0.8rem; margin-left: 10px; border: 1px solid #ff7b72; padding: 2px 6px; border-radius: 4px; }
+        .date { color: #8b949e; font-size: 0.9rem; }
+
+        .status-bar { margin-top: 20px; color: #8b949e; font-size: 0.8rem; }
+        .blink { animation: blinker 1s linear infinite; color: #00ff00; }
+        @keyframes blinker { 50% { opacity: 0; } }
+        
+        .back-btn { display: inline-block; margin-top: 40px; color: #58a6ff; text-decoration: none; border: 1px solid #30363d; padding: 10px 20px; border-radius: 6px; }
+        .back-btn:hover { background: #30363d; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>/var/www/bhvsy/vault</h1>
+        <div class="status-bar">ACCESS LEVEL: PUBLIC <span class="blink">● ONLINE</span></div>
+
+        <div class="directory">
+            <a href="#" class="file-row">
+                <div>
+                    <span class="icon">📄</span> trading_strategy_v4.pdf
+                    <span class="lock">LOCKED</span>
+                </div>
+                <div class="date">2026-01-15</div>
+            </a>
+            
+            <a href="#" class="file-row">
+                <div>
+                    <span class="icon">⚙️</span> rtx4060_optimization.json
+                </div>
+                <div class="date">2026-01-20</div>
+            </a>
+
+            <a href="#" class="file-row">
+                <div>
+                    <span class="icon">🗝️</span> public_pgp_key.asc
+                </div>
+                <div class="date">2025-11-02</div>
+            </a>
+
+            <a href="#" class="file-row">
+                <div>
+                    <span class="icon">📂</span> bhvsy_os_source
+                    <span class="lock">PRIVATE</span>
+                </div>
+                <div class="date">2026-02-01</div>
+            </a>
+        </div>
+
+        <p style="margin-top: 20px; color: #8b949e; font-size: 0.8rem;">
+            *Some files require authorized credentials. Contact Administrator for access.
+        </p>
+
+        <a href="https://bhvsy.github.io/" class="back-btn">cd .. (Return Home)</a>
+    </div>
+
+</body>
+</html>
